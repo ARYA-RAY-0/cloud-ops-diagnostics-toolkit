@@ -1,0 +1,5 @@
+
+=== AWS Security Group Audit (2 groups) | Status: CRIT ===
+[CRIT] sg-0fedcba9876543210 (app-db-exposed-sg) | tcp/22 from 0.0.0.0/0 -> Public ingress on high-risk service(s): 22 (SSH)
+[WARN] sg-0fedcba9876543210 (app-db-exposed-sg) | tcp/22 from 0.0.0.0/0 -> Ingress rule missing Description tag for auditability
+[CRIT] sg-0fedcba9876543210 (app-db-exposed-sg) | tcp/5432 from 0.0.0.0/0 -> Public ingress on high-risk service(s): 5432 (PostgreSQL)

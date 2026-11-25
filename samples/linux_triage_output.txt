@@ -1,0 +1,43 @@
+=== Linux Host Triage: DESKTOP-51MKURN (2026-11-25 20:44:41 UTC) ===
+--- CPU & Load (vCPUs: 4) ---
+Load average (1m / 5m / 15m): 0.03 / 0.03 / 0.00
+Cumulative CPU iowait: 1.4% | irq+softirq: 0.3% | steal: 0.0%
+--- Memory & OOM ---
+               total        used        free      shared  buff/cache   available
+Mem:            3917         433        2894           3         729        3483
+Swap:           2048           0        2048
+[OK] No recent OOM killer messages found in accessible kernel logs
+--- Disk Space (df -h) ---
+Filesystem      Size  Used Avail Use% Mounted on
+none            2.0G     0  2.0G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+drivers         238G  219G   20G  92% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.7G  954G   1% /
+none            2.0G     0  2.0G   0% /usr/lib/wsl/lib
+rootfs          2.0G  2.7M  2.0G   1% /init
+none            2.0G   76K  2.0G   1% /mnt/wslg/versions.txt
+none            2.0G   76K  2.0G   1% /mnt/wslg/doc
+C:\             238G  219G   20G  92% /mnt/c
+[CRIT] Filesystem /usr/lib/wsl/drivers at 92% capacity
+[CRIT] Filesystem /mnt/c at 92% capacity
+--- Inodes (df -i) ---
+Filesystem       Inodes   IUsed    IFree IUse% Mounted on
+none             501406       5   501401    1% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+drivers             999 -999001  1000000     - /usr/lib/wsl/drivers
+/dev/sdd       67108864   86535 67022329    1% /
+none             501406       5   501401    1% /usr/lib/wsl/lib
+rootfs           500146      12   500134    1% /init
+none             501406      52   501354    1% /mnt/wslg/versions.txt
+none             501406      52   501354    1% /mnt/wslg/doc
+C:\                 999 -999001  1000000     - /mnt/c
+--- Listening Sockets ---
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*          
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*          
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*          
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*          
+udp   UNCONN 0      0               [::1]:323          [::]:*          
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*          
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*          
+tcp   LISTEN 0      64          127.0.0.1:5345      0.0.0.0:*          
+[OK] No failed systemd units

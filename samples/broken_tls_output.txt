@@ -1,0 +1,5 @@
+
+=== OSI Layer 3-7 Probe: expired.badssl.com:443 ===
+[PASS] Layer 7 DNS      | 104.154.89.105 (192.72 ms)
+[PASS] Layer 4 TCP      | Connected to 104.154.89.105:443 (256.99 ms)
+[FAIL] Layer 5/6 TLS    | TLS_CERT_VERIFICATION_FAILED: certificate has expired (550.71 ms)
